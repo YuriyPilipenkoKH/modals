@@ -9,6 +9,7 @@ const refs = {
 
  refs.openModalBtn.addEventListener('click',onOpenModal);
  refs.closeModalBtn.addEventListener('click',onCloseModal);
+ refs.backdrop.addEventListener('click',onBackdropClick)
 
 function onOpenModal() {
     document.body.classList.add('show-modal');
@@ -17,4 +18,10 @@ function onOpenModal() {
 function onCloseModal() {
     document.body.classList.remove('show-modal');
 }  
+
+function onBackdropClick(event) {
+    if (event.currentTarget === event.target) {
+        onCloseModal();
+    }
+}
 
