@@ -4,23 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modal</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body >
     <main>
-        <button class="button" data-action="open-modal">open</button>
-
-        <div class="backdrop js-backdrop">
-            <div class="modal">
-                <h2>Modal window</h2>
-                <p>description</p>
-                <button class="button" type="button" data-action="close-modal">close</button>
+        <section class="modal-one">
+            <button class="button" data-action="open-modal">open</button>
+            <button class="button" data-action="open-modal-2">open-2</button>
+            <div class="backdrop js-backdrop">
+                <div class="modal">
+                    <h2>Modal window</h2>
+                    <p>description</p>
+                    <a href="#0" class="popup-close button-close ">Close</a>
+                    <!-- <button class="button-close" type="button" data-action="close-modal">close</button> -->
+                </div>
             </div>
-        </div>
+            <div class="backdrop-2 js-backdrop">
+                <div class="modal-2">
+                    <h2>Modal window-2</h2>
+                    <p>description</p>
+                    <a href="#0" class="popup-close button-close-2 ">Close</a>
+                    <!-- <button class="button-close-2 .popup-close" type="button" data-action="close-modal">close</button> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="modal-two">
+            <ul class="button__list">
+                <li class="button__item">
+                    <button class="modal__open-1 open-popup" type="button">open—1</button>
+                    <button class="modal__open-1 open-popup" type="button">open—1</button>
+                    <button class="modal__open-1 open-popup" type="button">open—1</button>
+                </li>
+                <li class="button__item">
+                    <button class="modal__open-2 open-popup" type="button">open—2</button>
+                </li>
+                <li class="button__item">
+                    <button class="modal__open-3 open-popup" type="button">open—3</button>
+                    <button class="modal__open-3 open-popup" type="button">open—3</button>
+                </li>
+                <li class="button__item">
+                    <button class="modal__open-4 open-popup" type="button">open—4</button>
+                </li>
+                <li class="button__item">
+                    <button class="modal__open-5 open-popup" type="button">open—5</button>
+                </li>
+            </ul>
+
+            <div class="popup__bg-1">
+                <div class="popup-1">
+                    <h2>Modal—1</h2>
+                    <p>description</p>
+                    <button class="cross__btn">✖</button>
+                </div>
+            </div>
+
+            <div class="popup__bg-2">
+                <div class="popup-2">
+                    <h2>Modal—2</h2>
+                    <p>description</p>
+                    <button class="cross__btn">✖</button>
+                </div>
+            </div>
+
+            <div class="popup__bg-3">
+                <div class="popup-3">
+                    <h2>Modal—3</h2>
+                    <p>description</p>
+                    <button class="cross__btn">✖</button>
+                </div>
+            </div>
+
+            <div class="popup__bg-4">
+                <div class="popup-4">
+                    <h2>Modal—4</h2>
+                    <p>description</p>
+                    <button class="cross__btn">✖</button>
+                </div>
+            </div>
+
+            <div class="popup__bg-5">
+                <div class="popup-5">
+                    <h2>Modal—5</h2>
+                    <p>description</p>
+                    <button class="cross__btn">✖</button>
+                </div>
+            </div>
+
+            
+
+        </section>
+
+
     </main>
 
-    <script src="./js/modal-1.js"  type="module"></script>
+    <!-- <script src="./js/modal-one.js"  type="module"></script> -->
+    <script src="./js/modal-two.js"  type="module"></script>
     
 </body>
 </html>
