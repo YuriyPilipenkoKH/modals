@@ -130,11 +130,11 @@ display: inline-flex;
     cursor: pointer;
 }
 
-.popup__bg-1, 
-.popup__bg-2, 
-.popup__bg-3, 
-.popup__bg-4, 
-.popup__bg-5 {
+.popup__bg-01, 
+.popup__bg-02, 
+.popup__bg-03, 
+.popup__bg-04, 
+.popup__bg-05 {
     position: fixed;
     top: 0;
     left: 0;
@@ -145,21 +145,21 @@ display: inline-flex;
     pointer-events: none;
 }
 
-.popup__bg-1.active, 
-.popup__bg-2.active,
-.popup__bg-3.active, 
-.popup__bg-4.active, 
-.popup__bg-5.active {
+.popup__bg-01.active, 
+.popup__bg-02.active,
+.popup__bg-03.active, 
+.popup__bg-04.active, 
+.popup__bg-05.active {
     opacity: 1;
     pointer-events: all;
     transition: 0.5s all;
 }
 
-.popup-1,
-.popup-2,
-.popup-3,
-.popup-4,
-.popup-5 {
+.popup-01,
+.popup-02,
+.popup-03,
+.popup-04,
+.popup-05 {
     position: relative;
     padding: 35px;
     margin: 15px auto 0;
