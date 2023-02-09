@@ -1,8 +1,12 @@
 
-const closeBtn = document.getElementById("close")
+const container = document.querySelector('.button__list');
+const closeBtn = document.querySelector('.popup__collection');
+const backdrop = document.querySelectorAll('.popup__collection > li');
+console.log(backdrop);
 
-const container = document.querySelector('.modal-two');
-container.addEventListener('click', onClick)
+container.addEventListener('click', onClick) ;
+closeBtn.addEventListener('click', onCloseModal) ;
+
 
 function onClick(event) {
     let k = event.target.id
@@ -11,48 +15,30 @@ function onClick(event) {
     if (event.target.nodeName !== 'BUTTON') {
         return
     }
-
      event.preventDefault();
      back.classList.add('active');
-   
 
-    console.log(event.target);
+    // console.log(event.target);
     // console.log(event.target.textContent);
     // console.log(event.target.nodeName);
-    console.log(back);
-
+    // console.log(back);
+    // console.log(k);
 }
 
 
+function onCloseModal(event) {
+    let currentActive = document.querySelector('.active')
 
-// openPopupButtons.forEach((button) => {
-//     button.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         popupBg.classList.add('active');
-//         popup.classList.add('active');
-//     })
-// });
+    currentActive.classList.remove('active')
+}
 
-// closePopupButtons.forEach((button) => {
-//     button.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         popupBg.classList.remove('active');
-//         popup.classList.remove('active');
-//     })
-// });
+function OnEscKey(event) {
+    const ESC = 'Escape'
+    const isEscape = event.code === ESC
+
+    if(isEscape) {
+        onCloseModal()
+    }
+}
 
 
-//     document.addEventListener('click', (e) => {
-//         if(e.target === popupBg) {
-//             popupBg.classList.remove('active');
-//             popup.classList.remove('active');
-//         }
-    
-//     })
-
-    // function onEscPress(e) {
-    //     if (e.code === 'Escape') {
-    //         popupBg.classList.remove('active');
-    //         popup.classList.remove('active');
-    //     }
-    // }    
