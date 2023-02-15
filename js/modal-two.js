@@ -28,8 +28,8 @@ function onClick(event) {
 
 function onCloseModal(event) {
     window.removeEventListener('keydown',OnEscKey)
-    console.log(event.target.id);
-    console.log(event.target.nodeName);
+    // console.log(event.target.id);
+    // console.log(event.target.nodeName);
     if (event.target.id === 'close') {
         backdrop.forEach(el => {
             el.classList.remove('active')

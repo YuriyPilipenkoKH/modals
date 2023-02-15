@@ -155,11 +155,8 @@ display: inline-flex;
     transition: 0.5s all;
 }
 
-.popup-01,
-.popup-02,
-.popup-03,
-.popup-04,
-.popup-05 {
+
+.popup {
     position: relative;
     padding: 35px;
     margin: 15px auto 0;
