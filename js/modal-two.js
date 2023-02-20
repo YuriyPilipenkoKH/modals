@@ -18,18 +18,18 @@ function onClick(event) {
     }
      event.preventDefault();
      back.classList.add('active');
-    // console.log(event.target);
-    // console.log(event.target.textContent);
-    // console.log(event.target.nodeName);
-    // console.log(back);
-    // console.log(k);
+    console.log(event.target);
+    console.log(event.target.textContent);
+    console.log(event.target.nodeName);
+    console.log(back);
+    console.log(k);
 }
 
 
 function onCloseModal(event) {
     window.removeEventListener('keydown',OnEscKey)
-    // console.log(event.target.id);
-    // console.log(event.target.nodeName);
+    console.log(event.target.id);
+    console.log(event.target.nodeName);
     if (event.target.id === 'close') {
         backdrop.forEach(el => {
             el.classList.remove('active')
